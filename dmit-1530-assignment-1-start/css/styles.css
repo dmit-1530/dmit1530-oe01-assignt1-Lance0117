@@ -11,7 +11,8 @@ body {
 }
 
 header, footer {
-    background-color: var(--blue-grey-50);
+    /* background-color: var(--blue-grey-50); */
+    background-color: #000;
     color: #fff;
     padding: 2rem 4rem;   
 }
