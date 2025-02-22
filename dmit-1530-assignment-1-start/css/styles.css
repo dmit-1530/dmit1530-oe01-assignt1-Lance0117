@@ -5,15 +5,136 @@
     --blue-grey-900: #263238;
 }
 
+/* .libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  } */
+  
+
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
 }
 
-header, footer {
-    /* background-color: var(--blue-grey-50); */
+/* header,
+footer {
+    background-color: var(--blue-grey-50);
     background-color: #000;
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 4rem;
+} */
+
+/* header part */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111111;
+    color: #fff;
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+h1{
+    font-size: 3.5rem;
+    line-height: 1.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+}
+
+.logo-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content:space-evenly;
+}
+
+.logo-header>h1 {
+    width: 70%;
+}
+
+.logo-header>img {
+    width: 30%;
+}
+
+.navigation {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navigation :first-child,
+.navigation :nth-child(2) {
+    margin-right: 2rem;
+}
+
+/* footer part */
+footer{
+    background-color: #191919;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.logo-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    text-align: left;
+}
+
+.logo-footer>h1 {
+    width: 60%;
+}
+
+.logo-footer>img {
+    width: 40%;
+    height: 4.2rem;
+}
+
+.logo-footer>p{
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+footer section{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 3rem 0;
+}
+
+footer h4{
+    margin-bottom: 0.75rem;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+
+footer li{
+    margin-bottom: 0.75rem;
+}
+
+footer p{
+    font-size: small;
+    color: var(--blue-grey-200);
 }
 
