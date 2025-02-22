@@ -191,6 +191,7 @@ footer p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     font-weight: 100;
+    margin-bottom: 2rem;
 }
 
 .home section:nth-of-type(2) p {
@@ -258,11 +259,11 @@ footer p {
     margin-bottom: 1.5rem;
 }
 
-.home section:nth-of-type(4) p{
+.home section:nth-of-type(4) p {
     font-size: medium;
 }
 
-.home section:nth-of-type(4) p:nth-of-type(1){
+.home section:nth-of-type(4) p:nth-of-type(1) {
     margin-bottom: 3rem;
 }
 
@@ -274,36 +275,36 @@ footer p {
 }
 
 .home section:nth-of-type(4) h3,
-.home section:nth-of-type(4) ul{
+.home section:nth-of-type(4) ul {
     text-align: left;
 }
 
-.home section:nth-of-type(4) ul{
+.home section:nth-of-type(4) ul {
     padding-left: 1.5rem;
 }
 
 .home section:nth-of-type(4) li:nth-of-type(1),
-.home section:nth-of-type(4) li:nth-of-type(2){
+.home section:nth-of-type(4) li:nth-of-type(2) {
     margin-bottom: 1rem;
 }
 
-.home section:nth-of-type(4) img{
+.home section:nth-of-type(4) img {
     border-radius: 0.5rem;
     margin-top: 3rem;
 }
 
-.home section:nth-of-type(4) img:nth-of-type(1){
+.home section:nth-of-type(4) img:nth-of-type(1) {
     margin-bottom: 3rem;
 }
 
 /* the fifth section */
-.home section:nth-of-type(5){
+.home section:nth-of-type(5) {
     background-color: var(--blue-grey-800);
     padding: 4rem 2rem;
     color: #000;
 }
 
-.home section:nth-of-type(5) div{
+.home section:nth-of-type(5) div {
     background-color: white;
     padding: 4rem 1rem;
     border-radius: 0.5rem;
@@ -316,16 +317,120 @@ footer p {
     margin-bottom: 1rem;
 }
 
-.home section:nth-of-type(5) p{
-    font-size:large;
+.home section:nth-of-type(5) p {
+    font-size: large;
     margin-bottom: 2rem;
 }
 
-.home section:nth-of-type(5) button{
+.home section:nth-of-type(5) button {
     border-radius: 6px;
     background-color: #111111;
     color: #ededed;
     padding: 1rem;
     width: 5.5rem;
     height: 3.5rem;
+}
+
+/* Medium view */
+@media screen and (min-width:45rem) {
+
+    /* header part */
+    header {
+        padding: 3rem 2rem;
+    }
+
+    .logo-header {
+        width: 50%;
+    }
+
+    .logo-header h1 {
+        width: 50%;
+    }
+
+    .navigation {
+        width: 50%;
+        text-align: right;
+    }
+
+    /* main part */
+    /* the first section */
+
+    /* the second section */
+    .passion-section-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .passion-section-flexbox div {
+        width: 50%;
+    }
+
+    /* the third section */
+
+    /* the fourth section */
+    .residential-flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .residential-container{
+        width: 48%;
+    }
+
+    .home section:nth-of-type(4) img{
+        width: 48%;
+    }
+
+    .commercial-flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .commercial-container{
+        width: 48%;
+        order: 1;
+    }
+
+    /* the fifth section */
+    .home section:nth-of-type(5) {
+        padding: 4rem 10rem;
+    }
+
+    /* footer part */
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-footer{
+        width: 50%;
+        margin-right: 2.5rem;
+    }
+
+    footer section{
+        width: 50%;
+        gap: 1.5rem;
+    }
+
+    footer>p{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+
+/* Large view */
+@media screen and (min-width:60rem) {
+    body {
+        /* limitation for largest layout */
+        max-width: 75rem;
+        /* margin: 0 auto; */
+    }
 }
