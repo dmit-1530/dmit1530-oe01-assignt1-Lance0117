@@ -6,25 +6,6 @@
     --blue-grey-900: #263238;
 }
 
-/* .libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
-  } */
-
-
 body {
     color: #000;
     text-align: center;
@@ -37,6 +18,8 @@ footer {
     color: #fff;
     padding: 2rem 4rem;
 } */
+
+/* TODO: fix the h1 and logo image */
 
 /* header part */
 header {
@@ -368,7 +351,7 @@ footer p {
     /* the third section */
 
     /* the fourth section */
-    .residential-flexbox{
+    .residential-flexbox {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -376,15 +359,15 @@ footer p {
         gap: 1.5rem;
     }
 
-    .residential-container{
+    .residential-container {
         width: 48%;
     }
 
-    .home section:nth-of-type(4) img{
+    .home section:nth-of-type(4) img {
         width: 48%;
     }
 
-    .commercial-flexbox{
+    .commercial-flexbox {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -392,7 +375,7 @@ footer p {
         gap: 1.5rem;
     }
 
-    .commercial-container{
+    .commercial-container {
         width: 48%;
         order: 1;
     }
@@ -403,23 +386,23 @@ footer p {
     }
 
     /* footer part */
-    .footer-container{
+    .footer-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .logo-footer{
+    .logo-footer {
         width: 50%;
         margin-right: 2.5rem;
     }
 
-    footer section{
+    footer section {
         width: 50%;
         gap: 1.5rem;
     }
 
-    footer>p{
+    footer>p {
         margin-left: 10rem;
         margin-right: 10rem;
     }
@@ -430,7 +413,138 @@ footer p {
 @media screen and (min-width:60rem) {
     body {
         /* limitation for largest layout */
-        max-width: 75rem;
-        /* margin: 0 auto; */
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    /* header part */
+    header {
+        padding: 2.5rem 13rem;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo-header {
+        width: 40%;
+        max-width: 18.5rem;
+        min-width: 18.5rem;
+    }
+
+    .logo-header h1 {
+        width: 70%;
+    }
+
+    .navigation {
+        width: 40%;
+        text-wrap: nowrap;
+        text-align: right;
+    }
+
+    /* main part */
+    /* the first section */
+    .home section:nth-of-type(1) h2,
+    .home section:nth-of-type(1) p {
+        padding-left: 11rem;
+        padding-right: 11rem;
+    }
+
+    /* the second section */
+    .home section:nth-of-type(2) {
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    .passion-section-flexbox div {
+        width: 33%;
+    }
+
+    /* the third section */
+    .home section:nth-of-type(3) {
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    /* the fourth section */
+    .home section:nth-of-type(4) {
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    .redesigned-container {
+        display: flex;
+        gap: 1.5rem;
+        align-content: space-between;
+    }
+
+    .residential-flexbox {
+        width: 50%;
+    }
+
+    .residential-container {
+        width: 100%;
+    }
+
+    .home section:nth-of-type(4) img {
+        width: 100%;
+    }
+
+    .commercial-flexbox {
+        width: 50%;
+        align-content: space-between;
+    }
+
+    .commercial-container {
+        width: 100%;
+        order: 0;
+    }
+
+    /* the fifth section */
+    .home section:nth-of-type(5) {
+        padding: 4rem 24rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home section:nth-of-type(5) div {
+        min-width: 42rem;
+        margin: 0 auto;
+    }
+
+    /* footer part */
+    footer {
+        padding: 4rem 13rem;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-footer {
+        width: 50%;
+        max-width: 24rem;
+        min-width: 24rem;
+        margin-right: 2.5rem;
+        justify-content: left;
+    }
+
+    .logo-footer h1 {
+        width: 55%;
+    }
+
+    .logo-footer img {
+        width: 30%;
+    }
+
+    footer section {
+        width: 50%;
+        gap: 1.5rem;
+        /* text-align: left; */
+    }
+
+    footer>p {
+        margin-left: 9rem;
+        margin-right: 9rem;
     }
 }
