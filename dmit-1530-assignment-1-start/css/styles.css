@@ -9,6 +9,7 @@
 body {
     color: #000;
     text-align: center;
+    min-width: 22.5rem;
 }
 
 /* header,
@@ -19,7 +20,6 @@ footer {
     padding: 2rem 4rem;
 } */
 
-/* TODO: fix the h1 and logo image */
 
 /* header part */
 header {
@@ -43,7 +43,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-evenly;
+    max-width: 17.5rem;
+    min-width: 17.5rem;
 }
 
 .logo-header>h1 {
@@ -64,61 +65,6 @@ h1 {
     margin-right: 2rem;
 }
 
-/* footer part */
-footer {
-    background-color: #191919;
-    color: #fff;
-    padding: 4rem 2rem;
-}
-
-.logo-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-    text-align: left;
-}
-
-.logo-footer>h1 {
-    width: 60%;
-}
-
-.logo-footer>img {
-    width: 40%;
-    height: 4.2rem;
-}
-
-.logo-footer>p {
-    text-align: left;
-    margin-top: 1.5rem;
-}
-
-footer section {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    margin: 3rem 0;
-}
-
-footer h4 {
-    margin-bottom: 0.75rem;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: small;
-}
-
-footer li {
-    margin-bottom: 0.75rem;
-}
-
-footer p {
-    font-size: small;
-    color: var(--blue-grey-200);
-}
 
 /* Hpmepage main part */
 /* the first section */
@@ -314,6 +260,70 @@ footer p {
     height: 3.5rem;
 }
 
+/* footer part */
+footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.footer-container{
+    max-width: 19.3rem;
+    margin: 0 auto;
+
+}
+
+.logo-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 19.3rem;
+    min-width: 19.3rem;
+    margin: 0 auto;
+}
+
+.logo-footer>h1 {
+    width: 65%;
+}
+
+.logo-footer>img {
+    /* width: 40%; */
+    height: 4.2rem;
+}
+
+.logo-footer>p {
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 3rem 0;
+}
+
+footer h4 {
+    margin-bottom: 0.75rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+
+footer li {
+    margin-bottom: 0.75rem;
+}
+
+footer p {
+    font-size: small;
+    color: var(--blue-grey-200);
+}
+
 /* Medium view */
 @media screen and (min-width:45rem) {
 
@@ -323,15 +333,17 @@ footer p {
     }
 
     .logo-header {
-        width: 50%;
+        width: 40%;
+        max-width: 21.5rem;
+        min-width: 21.5rem;
     }
 
     .logo-header h1 {
-        width: 50%;
+        width: 55%;
     }
 
     .navigation {
-        width: 50%;
+        width: 40%;
         text-align: right;
     }
 
@@ -389,11 +401,13 @@ footer p {
     .footer-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .logo-footer {
         width: 50%;
+        max-width: 21rem;
+        min-width: 21rem;
         margin-right: 2.5rem;
     }
 
