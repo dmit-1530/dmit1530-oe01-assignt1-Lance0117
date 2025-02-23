@@ -267,10 +267,9 @@ footer {
     padding: 4rem 2rem;
 }
 
-.footer-container{
+.footer-container {
     max-width: 19.3rem;
     margin: 0 auto;
-
 }
 
 .logo-footer {
@@ -288,7 +287,6 @@ footer {
 }
 
 .logo-footer>img {
-    /* width: 40%; */
     height: 4.2rem;
 }
 
@@ -402,6 +400,8 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .logo-footer {
@@ -533,6 +533,8 @@ footer p {
         display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .logo-footer {
@@ -554,7 +556,6 @@ footer p {
     footer section {
         width: 50%;
         gap: 1.5rem;
-        /* text-align: left; */
     }
 
     footer>p {
