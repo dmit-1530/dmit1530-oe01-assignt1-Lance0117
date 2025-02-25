@@ -597,10 +597,27 @@ footer p {
     }
 
     /* the fourth section */
+    .gallery section:nth-of-type(4) h2{
+        text-align: center;
+    }
 
+    .features-flexbox{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
 
+    .gallery section:nth-of-type(4) ul{
+        margin: 0;
+    }
 
+    .features-flexbox ul li:nth-of-type(4){
+        display: none;
+    }
 
+    .features-img-container{
+        width: 48%;
+    }
 
     /* footer part */
     .footer-container {
